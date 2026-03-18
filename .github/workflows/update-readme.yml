@@ -1,0 +1,28 @@
+# Optional: Updates "Last updated" date in README weekly
+# To enable WakaTime stats later: add WAKATIME_API_KEY and GH_TOKEN secrets,
+# then uncomment/integrate a WakaTime action (e.g., anishkumar27/readme-stats)
+
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update last modified date
+        run: |
+          sed -i "s/Last updated: .*/Last updated: $(date +'%B %Y') | Open to opportunities/" README.md
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git diff --quiet README.md || (git add README.md && git commit -m "chore: update README timestamp" && git push)
