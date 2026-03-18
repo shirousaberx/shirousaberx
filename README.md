@@ -22,7 +22,9 @@ Passionate Software Engineer with 2 years of experience specializing in Fintech 
 ## Connect
 
 [![Email](https://img.shields.io/badge/Email-michaelalexander666666%40gmail.com-red?style=flat-square&logo=gmail)](mailto:michaelalexander666666@gmail.com)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mikealexa-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/mikealexa/)
+
 [![GitHub](https://img.shields.io/badge/GitHub-shirousaberx-181717?style=flat-square&logo=github)](https://github.com/shirousaberx)
 
 ---
