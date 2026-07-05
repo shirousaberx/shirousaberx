@@ -63,4 +63,4 @@ Passionate Software Engineer with 2 years of experience specializing in Fintech 
 
 ---
 
-*Last updated: June 2026 | Open to opportunities
+*Last updated: July 2026 | Open to opportunities
